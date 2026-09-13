@@ -16,10 +16,6 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('📍 Pong! Bot 24/7 en Railway 🔥')
-
 @bot.tree.command(name="setup", description="Configura el bot DARK BIO FF")
 async def setup(interaction: discord.Interaction):
     await interaction.response.send_message("✅ Bot configurado correctamente! Ya estoy 24/7")

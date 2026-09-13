@@ -2,16 +2,14 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import os
-import asyncio
 
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# ========== AQUI PEGAS TUS ID ==========
-CANAL_BIOS_ID = 123456789012345678  # ID del canal donde manda bios
-ROL_ID = 123456789012345678         # ID del rol @ que va a mencionar
-# =======================================
+# ========== TU ID DEL CANAL ==========
+CANAL_BIOS_ID = 1548464034632831036  # ID del canal
+# =====================================
 
 @bot.event
 async def on_ready():
